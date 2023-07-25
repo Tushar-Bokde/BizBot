@@ -622,136 +622,178 @@ body {
   #COURSE
 \*-----------------------------------*/
 
-.course {
-  background-color: var(--isabelline);
+.t-svg-fix {
+  margin-top: -1px;
+  align-items: center;
 }
-
-.course-card {
+.u-relative {
   position: relative;
-  background-color: var(--white);
-  border-radius: var(--radius-5);
-  overflow: hidden;
 }
-
-.course-card .img-cover {
-  transition: var(--transition-2);
+.u-Pt-2xl {
+  padding-top: 6rem;
 }
-
-.course-card:is(:hover, :focus-within) .img-cover {
-  transform: scale(1.1);
-}
-
-.course-card :is(.abs-badge, .badge) {
-  font-family: var(--ff-league_spartan);
-  border-radius: var(--radius-3);
-}
-
-.course-card .abs-badge {
+.t-svg-fix .t-home-dust-left-1 {
+  left: 0;
+  max-width: 297px;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: var(--selective-yellow);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  line-height: 1;
-  padding: 6px 8px;
-  padding-block-end: 3px;
+  top: 0;
+}
+.u-hidden {
+  display: none;
 }
 
-.course-card .abs-badge ion-icon {
-  font-size: 18px;
-  margin-block-end: 5px;
-  --ionicon-stroke-width: 50px;
+.t-svg-fix .t-home-dust-right-2 {
+  top: 0;
+  max-width: 301px;
+  position: absolute;
+  right: 0;
 }
-
-.course-card .card-content {
-  padding: 25px;
+.t-svg-fix img {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
-
-.course-card .badge {
-  background-color: #00ccff;
-  max-width: max-content;
-  color: black;
-  line-height: 25px;
-  padding-inline: 10px;
-}
-
-.course-card .card-title {
-  /* display: -webkit-box; */
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  margin-block: 0px 0px;
-  transition: var(--transition-1);
-  font-size: larger;
-}
-
-.course-card .card-title:is(:hover, :focus) {
-  color: blue;
-}
-
-.course-card :is(.wrapper, .rating-wrapper, .card-meta-list, .card-meta-item) {
-  display: flex;
+.o-container {
+  max-width: 100%;
+  margin: auto;
   align-items: center;
 }
-
-.course-card .wrapper {
-  gap: 10px;
+.o-columns {
+  grid-gap: 3rem 4rem;
+  display: grid;
+  justify-content: center;
 }
-
-.course-card .rating-wrapper {
-  gap: 3px;
+@media screen and (min-width: 48rem) {
+  .o-columns.v--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.course-card .rating-wrapper ion-icon {
-  color: var(--selective-yellow);
+@media screen and (min-width: 48rem) {
+  .o-columns.v--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.course-card .rating-text {
-  color: var(--eerie-black-1);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-500);
+.o-columns .t-home-testimonial-block {
+  background: #f6f6f7;
 }
-
-.course-card .price {
-  color: var(--radical-red);
-  font-family: var(--ff-league_spartan);
-  font-size: var(--fs-4);
-  font-weight: var(--fw-600);
-  margin-block: 8px 15px;
+.t-home-testimonial-block .t-home-testimonial-img {
+  height: 125px;
+  left: 3rem;
+  position: absolute;
+  top: -60px;
+  width: 110px;
 }
-
-.course-card .card-meta-list {
-  flex-wrap: wrap;
+@media (min-width: 768px) {
+  .md\:u-block {
+    display: block;
+  }
 }
-
-.course-card .card-meta-item {
+.u-relative {
   position: relative;
-  gap: 5px;
+}
+.u-Pb-xs {
+  padding-bottom: 1.5rem;
+}
+.u-Px-md {
+  padding-right: 3rem;
+}
+.u-Px-md {
+  padding-left: 3rem;
+}
+.u-rounded {
+  border-radius: 1.5rem;
+}
+.o-container .u-text-p5 {
+  font-size: 2rem;
+}
+.u-text-p5-bold {
+  color: #000;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+@media screen and (min-width: 36rem) {
+  .u-text-p5 {
+    font-size: calc(1.11721rem + 0.49038vw);
+  }
 }
 
-.course-card .card-meta-item:not(:last-child)::after {
-  content: "|";
-  display: inline-block;
-  color: var(--platinum);
-  padding-inline: 10px;
+@media screen and (min-width: 75rem) {
+  .u-text-p5 {
+    font-size: 1.485rem;
+  }
+}
+.u-text-p5-bold {
+  font-size: 1.29375rem;
+  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+@media screen and (min-width: 36rem) {
+  .u-text-p5-bold {
+    font-size: calc(1.11721rem + 0.49038vw);
+  }
 }
 
-.course-card .card-meta-item ion-icon {
-  color: var(--quick-silver);
-  --ionicon-stroke-width: 50px;
+@media screen and (min-width: 75rem) {
+  .u-text-p5-bold {
+    font-size: 1.485rem;
+  }
+}
+.u-text-p8,
+.u-text-p8-bold {
+  font-size: 1.5rem;
+}
+.u-my-0 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.t-home-testimonial-block {
+  background: #f6f6f7;
 }
 
-.course-card .card-meta-item .span {
-  color: var(--eerie-black-1);
-  font-size: var(--fs-7);
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
-.course .btn {
-  margin-inline: auto;
-  margin-block-start: 60px;
+.t-home-testimonial-block .t-home-testimonial-img {
+  height: 125px;
+  left: 3rem;
+  position: absolute;
+  top: -60px;
+  width: 110px;
+}
+.u-Pt-md {
+  padding-top: 3rem;
+}
+.sm\:u-Pt-md {
+  padding-top: 3rem;
+}
+.md\:u-Pt-md {
+  padding-top: 3rem;
+}
+.lg\:u-Pt-md {
+  padding-top: 3rem;
+}
+.xl\:u-Pt-md {
+  padding-top: 3rem;
+}
+.u-text-p6,
+.u-text-p6-bold {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.u-text-p6-bold {
+  font-weight: 500;
+}
+.c-link {
+  color: #06f;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /*-----------------------------------*\
@@ -1319,7 +1361,7 @@ button {
   #Blogs 2nd page
 \*-----------------------------------*/
 .t-home-dark {
-  background: #000c1e;
+  background: #0c0c0a;
 }
 
 .t-home-darkdust-left {
