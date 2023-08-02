@@ -55,9 +55,3 @@ const activeElem = function () {
 };
 
 addEventOnElem(window, "scroll", activeElem);
-
-playVideo();
-function playVideo() {
-  var videoPlayer = document.getElementById("videoPlayer");
-  videoPlayer.play();
-}
