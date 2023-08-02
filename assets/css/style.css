@@ -633,7 +633,7 @@ body {
   position: relative;
 }
 .u-Pt-2xl {
-  padding-top: 6rem;
+  padding-top: 10rem;
 }
 .t-svg-fix .t-home-dust-left-1 {
   left: 0;
@@ -710,6 +710,7 @@ body {
 }
 .o-container .u-text-p5 {
   font-size: 2rem;
+  padding-bottom: 30px;
 }
 .u-text-p5-bold {
   color: #000;
@@ -1157,8 +1158,8 @@ svg:not(:root) {
   padding-top: 1rem;
 }
 .md\:u-Py-2xs {
-  padding-bottom: 5rem;
-  padding-top: 2rem;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
 }
 
 div {
@@ -1496,7 +1497,7 @@ button {
   display: block;
 }
 .b--u-py-12 {
-  padding-bottom: 6rem !important;
+  padding-bottom: 11rem !important;
   padding-top: 6rem !important;
   display: flex;
   justify-content: center;
@@ -3385,7 +3386,7 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: #ffffff;
+  color: #001eff;
   text-decoration: underline;
 }
 .contain {
@@ -3455,10 +3456,10 @@ body:-webkit-scrollbar {
   width: 0;
 }
 .row__inner:hover .tile:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .tile:hover ~ .tile {
-  transform: translate3d(125px, 0, 0);
+  transform: translate3d(20px, 0, 0);
 }
 /*------------------------------------------------------*\
 #HOME PAGE
@@ -3483,7 +3484,7 @@ body:-webkit-scrollbar {
 }
 .o-container-xl .u-flex {
   display: flex;
-  gap: 20px;
+  gap: 5px;
 }
 /* .u-flex-wrap {
   flex-wrap: nowrap;
@@ -3494,9 +3495,9 @@ body:-webkit-scrollbar {
 .lg\:u-basis-5 {
   flex-basis: 30%;
 }
-.lg\:u-ml-0 {
+/* .lg\:u-ml-0 {
   margin-left: 0 !important;
-}
+} */
 .b--u-mb-4 {
   margin-bottom: 2rem !important;
 }
