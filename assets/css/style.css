@@ -459,48 +459,6 @@ body {
 }
 
 /*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
-/* .hero {
-  padding-block-start: calc(var(--section-padding) + 80px);
-}
-
-.hero .container {
-  display: grid;
-  gap: 40px;
-}
-
-.hero-text {
-  color: var(--eerie-black-1);
-  font-size: var(--fs-4);
-  text-align: center;
-  margin-block: 18px 20px;
-  line-height: 1.2;
-}
-
-.hero .btn {
-  margin-inline: auto;
-}
-
-.hero-banner {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-.hero-banner .img-holder.one {
-  border-top-right-radius: 70px;
-  border-bottom-left-radius: 110px;
-}
-
-.hero-banner .img-holder.two {
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 90px;
-} */
-
-/*-----------------------------------*\
   #CATEGORY
 \*-----------------------------------*/
 
@@ -654,9 +612,11 @@ body {
 .t-svg-fix img {
   display: block;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: 0;
+  margin-bottom: 110px;
+  width: 50%;
 }
 .o-container {
   max-width: 100%;
@@ -814,21 +774,6 @@ img {
   /* border-top-right-radius: 80px;
   border-bottom-left-radius: 120px; */
 }
-/* 
-.video .play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--radical-red);
-  font-size: 30px;
-  padding: 16px;
-  color: var(--white);
-  border-radius: var(--radius-circle);
-  box-shadow: 0 0 0 0 var(--white_50);
-  z-index: 1;
-  animation: pulse 3s ease infinite;
-} */
 
 @keyframes pulse {
   0% {
@@ -838,11 +783,6 @@ img {
   100% {
     box-shadow: 0 0 0 20px transparent;
   }
-}
-
-.video-banner::after {
-  /* inset: 0; */
-  /* background-color: var(--black_30); */
 }
 
 /*-----------------------------------*\
@@ -873,102 +813,6 @@ img {
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
-
-/* .blog-card .card-banner {
-  border-radius: var(--radius-10);
-}
-
-.blog-card .card-banner .img-cover {
-  transition: var(--transition-2);
-}
-
-.blog-card .card-banner::after {
-  inset: 0;
-  background-color: var(--black_50);
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-.blog-card:is(:hover, :focus-within) .card-banner .img-cover {
-  transform: scale(1.1);
-}
-
-.blog-card:is(:hover, :focus-within) .card-banner::after {
-  opacity: 1;
-}
-
-.blog-card .card-content {
-  position: relative;
-  margin-inline: 15px;
-  background-color: var(--white);
-  padding: 20px;
-  border-radius: var(--radius-10);
-  box-shadow: var(--shadow-3);
-  margin-block-start: -100px;
-  z-index: 1;
-}
-
-.blog-card .card-btn {
-  position: absolute;
-  top: -40px;
-  right: 30px;
-  background-color: blue;
-  color: var(--white);
-  font-size: 20px;
-  padding: 20px;
-  border-radius: var(--radius-circle);
-  transition: var(--transition-1);
-  opacity: 0;
-}
-
-.blog-card .card-btn:is(:hover, :focus) {
-  background-color: var(--radical-red);
-}
-
-.blog-card:is(:hover, :focus-within) .card-btn {
-  opacity: 1;
-  transform: translateY(10px);
-}
-
-.blog-card :is(.card-meta-item, .card-text, .card-subtitle) {
-  font-size: var(--fs-5);
-}
-
-.blog-card .card-subtitle {
-  text-transform: uppercase;
-}
-
-.blog-card .card-title {
-  margin-block: 10px 15px;
-  transition: var(--transition-1);
-}
-
-.blog-card .card-title:is(:hover, :focus) {
-  color: blue;
-}
-
-.blog-card :is(.card-meta-list, .card-meta-item) {
-  display: flex;
-}
-
-.blog-card .card-meta-list {
-  flex-wrap: wrap;
-  gap: 10px 20px;
-  margin-block-end: 20px;
-}
-
-.blog-card .card-meta-item {
-  gap: 10px;
-  align-items: center;
-  color: var(--eerie-black-1);
-}
-
-.blog-card .card-meta-item ion-icon {
-  color: blue;
-  font-size: 18px;
-  --ionicon-stroke-width: 40px;
-} */
-
 .u-Pt-xl {
   padding-top: 6rem;
 }
@@ -1360,7 +1204,6 @@ button {
 .md\:u-text-left {
   text-align: left;
 }
-
 /*-----------------------------------*\
   #Blogs 2nd page
 \*-----------------------------------*/
@@ -1892,28 +1735,6 @@ button {
     transparent 80%
   );
 }
-
-/* .back-top-btn {
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  background-color: blue;
-  color: var(--white);
-  font-size: 20px;
-  padding: 15px;
-  border-radius: var(--radius-circle);
-  z-index: 3;
-  opacity: 0;
-  pointer-events: none;
-  transition: var(--transition-1);
-}
-
-.back-top-btn.active {
-  transform: translateY(10px);
-  opacity: 1;
-  pointer-events: all;
-} */
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -2053,43 +1874,6 @@ button {
   /**
    * HERO
    */
-
-  /* .hero {
-    padding-block-start: calc(var(--section-padding) + 90px);
-  }
-
-  .hero .container {
-    gap: 50px;
-  }
-
-  .hero-text {
-    margin-block-end: 30px;
-  }
-
-  .hero-banner {
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero-banner .img-holder {
-    max-width: max-content;
-  }
-
-  .hero-banner .img-holder.one {
-    justify-self: flex-end;
-  }
-
-  .hero-banner .img-holder.two {
-    margin-block-start: 100px;
-  }
-
-  .hero-shape-1 {
-    display: block;
-    position: absolute;
-    bottom: -40px;
-    left: -10px;
-  } */
-
   /**
    * ABOUT
    */
@@ -3137,6 +2921,7 @@ abbr[title] {
 }
 .u-maxw-10 {
   max-width: 72rem;
+  padding-bottom: 0;
 }
 .u-maxw-10 .u-text-p1 {
   font-weight: 600;
@@ -3188,15 +2973,6 @@ abbr[title] {
 .t-home-swiper .swiper-prev img {
   width: 12px;
 }
-/* .t-home-swiper .swiper-wrapper {
-  box-sizing: content-box;
-  display: flex;
-  height: 100%;
-  position: relative;
-  transition-property: transform;
-  width: 100%;
-  z-index: 1;
-} */
 
 .t-home-swiper .swiper-container {
   height: 100%;
@@ -3255,8 +3031,8 @@ abbr[title] {
   min-height: 260px;
 }
 .t-home-swiper .swiper-slide > div {
-  height: 100%;
-  width: 220px;
+  /* height: 100%;
+  width: 220px; */
 }
 .t-home-swiper .swiper-next,
 .t-home-swiper .swiper-prev {
@@ -3368,15 +3144,12 @@ a.v--no-underline:hover {
   }
 }
 /* =================================================================== */
-/* h1,
-p {
-  text-align: center;
-}
-p {
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-} */
+/*------------------------------------------------------*\
+#Seamless Integration with Your Current Digital Technology
+#Seamless Integration with Your Current Digital Technology
+#Seamless Integration with Your Current Digital Technology
+\*------------------------------------------------------*/
+
 a:link,
 a:hover,
 a:active,
@@ -3393,7 +3166,7 @@ a:hover {
   width: 100%;
 }
 .row__inner {
-  transition: 450ms transform;
+  transition: 450ms;
   font-size: 0;
   white-space: nowrap;
   margin: 70.3125px 0;
@@ -3403,29 +3176,30 @@ a:hover {
   position: relative;
   width: 250px;
   display: inline-block;
-  background-color: #303037;
+  /* background-color: #303037; */
   border-radius: 1rem;
   /* height: 140.625px; */
   margin-right: 10px;
   font-size: 20px;
   cursor: pointer;
   transition: 450ms all;
-  transform-origin: center left;
+  transform-origin: center;
 }
 .tile__img {
   margin: auto;
-  height: 140.625px;
+  /* height: 140.625px; */
   -o-object-fit: cover;
   object-fit: cover;
 }
 .tile__details {
   position: absolute;
+  /* background-color: #001eff; */
+  word-break: break-all;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  font-size: 10px;
-  opacity: 0;
+  /* opacity: 0; */
   /* background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.9) 0%,
@@ -3444,13 +3218,25 @@ a:hover {
 .tile:hover .tile__details {
   opacity: 1;
 }
+
+.tile:hover .tile__details .u-text-p6-bold {
+  color: #46bcde;
+  text-decoration: none;
+}
 .tile__title {
   position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
   bottom: 0;
+  width: 100%;
   padding: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+  line-height: 3rem;
 }
 .row__inner:hover {
-  transform: translate3d(-62.5px, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 body:-webkit-scrollbar {
   width: 0;
@@ -3459,7 +3245,7 @@ body:-webkit-scrollbar {
   transform: scale(1.1);
 }
 .tile:hover ~ .tile {
-  transform: translate3d(20px, 0, 0);
+  transform: translate3d(10px, 0, 30px);
 }
 /*------------------------------------------------------*\
 #HOME PAGE
