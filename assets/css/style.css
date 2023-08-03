@@ -1458,6 +1458,7 @@ button {
 
 .insta-card:is(:hover, :focus-within) .card-content {
   opacity: 1;
+  background-color: rgba(0, 102, 255, 0.496);
 }
 
 .footer-bottom {
