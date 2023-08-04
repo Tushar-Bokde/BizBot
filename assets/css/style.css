@@ -148,7 +148,7 @@ button {
   cursor: pointer;
 }
 
-ion-icon {
+.ion-icon {
   pointer-events: none;
 }
 
@@ -751,9 +751,10 @@ img {
   font-weight: 400;
   letter-spacing: normal;
 }
-.u-text-p6-bold {
+/* .u-text-p6-bold {
   font-weight: 500;
-}
+  width: 10%;
+} */
 .c-link {
   color: #06f;
   cursor: pointer;
@@ -2723,7 +2724,7 @@ abbr[title] {
   }
 }
 .u-maxw-13 .c-tour .u-Pt-md {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   width: 414px;
   margin-top: 0px;
 }
@@ -2814,7 +2815,7 @@ abbr[title] {
   line-height: 2.5rem;
 }
 .u-text-p6-bold {
-  font-weight: 500;
+  font-weight: 700;
   color: #000;
 }
 .c-tour__features.v--dark .c-tour__feature .c-tour__feature_description {
@@ -3188,13 +3189,15 @@ a:hover {
 }
 .tile__img {
   margin: auto;
+  width: 62%;
+  padding-top: 44px;
   /* height: 140.625px; */
   -o-object-fit: cover;
   object-fit: cover;
 }
 .tile__details {
   position: absolute;
-  /* background-color: #001eff; */
+  /* background-color: #303037; */
   word-break: break-all;
   bottom: 0;
   left: 0;
@@ -3221,7 +3224,7 @@ a:hover {
 }
 
 .tile:hover .tile__details .u-text-p6-bold {
-  color: #46bcde;
+  color: blue;
   text-decoration: none;
 }
 .tile__title {
@@ -3247,6 +3250,14 @@ body:-webkit-scrollbar {
 }
 .tile:hover ~ .tile {
   transform: translate3d(10px, 0, 30px);
+}
+.tile__title .with-arrow {
+  width: 35px;
+  display: inline-block;
+  position: absolute;
+  height: 35px;
+  /* background-color: #18cc73; */
+  /* align-items: center; */
 }
 /*------------------------------------------------------*\
 #HOME PAGE
