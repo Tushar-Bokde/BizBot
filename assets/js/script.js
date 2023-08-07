@@ -55,3 +55,37 @@ const activeElem = function () {
 };
 
 addEventOnElem(window, "scroll", activeElem);
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
+
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 400,
+    modifier: 1,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+var sliderContainer = document.querySelector(".mySwiper .swiper-wrapper");
+
+sliderContainer.addEventListener("mouseenter", function () {
+  console.log("Mouse enter - Pausing autoplay");
+  swiper.autoplay.stop();
+});
+
+sliderContainer.addEventListener("mouseleave", function () {
+  console.log("Mouse leave - Resuming autoplay");
+  swiper.autoplay.start();
+});

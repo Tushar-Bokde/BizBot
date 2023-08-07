@@ -26,7 +26,12 @@
     <!-- 
     - custom css link
   -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- <link rel="stylesheet" href="./assets/css/style2.css" /> -->
 
     <!-- 
@@ -42,18 +47,15 @@
     <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
-    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
-    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js" defer></script>
-    <script src="./assets/js/test.js" defer></script>
-    <script src="./assets/js/scripts.js" defer></script>
+    <!-- <script src="./assets/js/test.js" defer></script> -->
+    <!-- <script src="./assets/js/scripts.js" defer></script> -->
 
     <!-- 
     - ionicon link
   -->
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -445,7 +447,7 @@
                   data-track-action="Carousel click"
                   data-track-label="Engage - carousel"
                 >
-                  <h3 class="c-tour__feature_title u-text-p6-bold">
+                  <h3 class="c-tour__feature_title u-text-p5-bold">
                     Meaningful Conversations
                   </h3>
                   <p class="md:c-tour__feature_description u-text-p6">
@@ -456,8 +458,8 @@
                     src="assets\images\widget-engage.1.jpg"
                     alt="AI chat bots to generate leads on your website"
                     class="c-tour__image"
-                    width="748"
-                    height="937"
+                    width="320"
+                    height="550"
                     loading="lazy"
                   />
                 </div>
@@ -470,7 +472,7 @@
                   data-track-action="Carousel click"
                   data-track-label="Nurture - carousel"
                 >
-                  <h3 class="c-tour__feature_title u-text-p6-bold">
+                  <h3 class="c-tour__feature_title u-text-p5-bold">
                     Simplified Knowledge base
                   </h3>
                   <p class="md:c-tour__feature_description u-text-p6">
@@ -481,8 +483,8 @@
                     src="assets\images\widget-nurture_1.jpg"
                     alt="Nurture leads with an AI chat bot"
                     class="c-tour__image"
-                    width="748"
-                    height="937"
+                    width="320"
+                    height="550"
                     loading="lazy"
                   />
                 </div>
@@ -495,7 +497,7 @@
                   data-track-action="Carousel click"
                   data-track-label="Qualify - carousel"
                 >
-                  <h3 class="c-tour__feature_title u-text-p6-bold">Qualify</h3>
+                  <h3 class="c-tour__feature_title u-text-p5-bold">Qualify</h3>
                   <p class="md:c-tour__feature_description u-text-p6">
                     Generate and qualify prospects automatically. Transfer
                     high-intent leads to your sales reps in real time to shorten
@@ -505,8 +507,8 @@
                     src="assets\images\widget-qualify.1.jpg"
                     alt="Conversational AI to qualify sales leads"
                     class="c-tour__image"
-                    width="748"
-                    height="937"
+                    width="320"
+                    height="550"
                     loading="lazy"
                   />
                 </div>
@@ -519,7 +521,7 @@
                   data-track-action="Carousel click"
                   data-track-label="Convert - carousel"
                 >
-                  <h3 class="c-tour__feature_title u-text-p6-bold">
+                  <h3 class="c-tour__feature_title u-text-p5-bold">
                     Deep Analytics
                   </h3>
                   <p class="md:c-tour__feature_description u-text-p6">
@@ -531,8 +533,8 @@
                     src="assets\images\widget-convert.1.jpg"
                     alt="Convert leads with AI chat bot"
                     class="c-tour__image"
-                    width="748"
-                    height="937"
+                    width="320"
+                    height="550"
                     loading="lazy"
                   />
                 </div>
@@ -941,200 +943,178 @@
             data-loop="true"
             data-space-between="20"
           >
-            <div
-              class="swiper-container t-home-swiper u-maxw-16 u-mx-auto u-Py-md u-flex swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
-              data-target="swiper.container"
-              style="cursor: grab"
-            >
-              <div class="contain">
-                <div
-                  class="row"
-                  style="
-                    overflow-x: overlay;
-                    width: 90vw;
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                  "
-                >
-                  <div class="row__inner">
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\university-icon.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            University<br />Template<br />
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+            <div class="contain t-home-swiper">
+              <div
+                class="row"
+                style="
+                  overflow-x: overlay;
+                  width: 90vw;
+                  -ms-overflow-style: none;
+                  scrollbar-width: none;
+                "
+              >
+                <div class="row__inner">
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\university-icon.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          University<br />Template<br />
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\call-scheduling-icon.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            Call<br />Scheduling<br />Template
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\call-scheduling-icon.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          Call<br />Scheduling<br />Template
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\covid-icon.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            Covid-19 Risk<br />
-                            Assessment <br />Template
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\covid-icon.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          Covid-19 Risk<br />
+                          Assessment <br />Template
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\HD-Ticket.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            Create<br />HelpDesk<br />Tickets
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\HD-Ticket.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          Create<br />HelpDesk<br />Tickets
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\customer-satisfaction-icon.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            Customer<br />Satisfaction<br />Templates
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\customer-satisfaction-icon.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          Customer<br />Satisfaction<br />Templates
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\customer-service-icon 1.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            Customer<br />Service<br />Template
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+                  </div>
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\customer-service-icon 1.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          Customer<br />Service<br />Template
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\HD-Ticket.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            Create<br />HelpDesk<br />Tickets
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+                  </div>
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\HD-Ticket.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          Create<br />HelpDesk<br />Tickets
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
-                    <div class="tile">
-                      <div
-                        class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                      >
-                        <img
-                          class="tile__img"
-                          src="assets\images\university-icon.png"
-                          alt=""
-                          height="15px"
-                          width="15px"
-                        />
-                        <div class="tile__details">
-                          <div class="tile__title">
-                            University<br />Template<br />
-                            <span
-                              class="u-w-full c-link u-text-p6-bold u-text-center"
-                              >More details ></span
-                            >
-                          </div>
+                  </div>
+                  <div class="tile">
+                    <div class="swipe-slide u-bg-white u-shadow-xl u-rounded">
+                      <img
+                        class="tile__img"
+                        src="assets\images\university-icon.png"
+                        alt=""
+                        height="15px"
+                        width="15px"
+                      />
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          University<br />Template<br />
+                          <span
+                            class="u-w-full c-link u-text-p6-bold u-text-center"
+                            >More details ></span
+                          >
                         </div>
                       </div>
                     </div>
@@ -1336,271 +1316,110 @@
         <!---------- Seamless Integration ---------->
         <!---------- Seamless Integration ---------->
 
-        <section class="t-home-dark u-relative u-Py-xl">
-          <div>
-            <div
-              class="o-container b--u-mt-12 u-Pb-xs md:u-Pb-xl u-text-white"
-              style="padding-top: 10px"
-            >
-              <h2 class="u-maxw-9 u-mx-auto u-text-center u-text-p1">
-                Seamless Integration with Your Current Digital Technology
-              </h2>
-              <p class="u-maxw-10 u-mx-auto u-text-center u-text-p5">
-                Experience the Effortless Integration of Bizbot with Leading
-                Technologies, Backed by 24x7 Exceptional Tech Support.
-              </p>
+        <section class="swiper mySwiper">
+          <div class="o-container u-text-white" style="padding-top: 50px">
+            <h2 class="u-maxw-9 u-mx-auto u-text-center u-text-p1">
+              Seamless Integration with Your Current Digital Technology
+            </h2>
+            <p class="u-maxw-10 u-mx-auto u-text-center u-text-p5">
+              Experience the Effortless Integration of Bizbot with Leading
+              Technologies, Backed by 24x7 Exceptional Tech Support.
+            </p>
+          </div>
+          <div class="swiper-wrapper" style="padding-bottom: 60px">
+            <div class="card swiper-slide">
+              <div class="card_image">
+                <img src="assets\images\android-icon.png" alt="" />
+              </div>
+              <div class="card_content">
+                <span class="card_title">Android</span>
+                <p class="card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis aliquam asperiores omnis officiis.
+                </p>
+                <span class="u-w-full c-link u-text-p6 u-text-center"
+                  >More details ></span
+                >
+              </div>
             </div>
-            <div
-              class="u-mx-auto u-relative"
-              data-controller="swiper"
-              data-show=""
-              data-show-lg="5"
-              data-show-md="3"
-              data-show-sm="1"
-              data-loop="true"
-              data-space-between="20"
-            >
-              <div
-                class="swiper-container t-home-swiper u-maxw-16 u-mx-auto u-Py-md u-flex swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
-                data-target="swiper.container"
-                style="cursor: grab"
-              >
-                <div class="contain">
-                  <div
-                    class="row"
-                    style="
-                      overflow-x: overlay;
-                      width: 90vw;
-                      -ms-overflow-style: none;
-                      scrollbar-width: none;
-                    "
-                  >
-                    <div class="row__inner">
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\wordpress-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span class="u-w-full u-text-p6-bold">
-                                WORDPRESS
-                                <!-- <img
-                                  src="assets\images\arrow svg.svg"
-                                  loading="lazy"
-                                  width="35"
-                                  height="30"
-                                  alt=""
-                                  class="with-arrow"
-                                /> -->
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\react-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >REACT JS</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="card swiper-slide">
+              <div class="card_image">
+                <img src="assets\images\angular-icon.png" alt="" />
+              </div>
+              <div class="card_content">
+                <span class="card_title">Angular</span>
+                <p class="card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis aliquam asperiores omnis officiis.
+                </p>
+                <span class="u-w-full c-link u-text-p6 u-text-center"
+                  >More details ></span
+                >
+              </div>
+            </div>
 
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\angular-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >ANGULAR</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="card swiper-slide">
+              <div class="card_image">
+                <img src="assets\images\apple-icon.png" alt="" />
+              </div>
+              <div class="card_content">
+                <span class="card_title">IOS</span>
+                <p class="card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis aliquam asperiores omnis officiis.
+                </p>
+                <span class="u-w-full c-link u-text-p6 u-text-center"
+                  >More details ></span
+                >
+              </div>
+            </div>
 
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\vuejs-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >VUEJS</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="card swiper-slide">
+              <div class="card_image">
+                <img src="assets\images\vuejs-icon.png" alt="" />
+              </div>
+              <div class="card_content">
+                <span class="card_title">VueJS</span>
+                <p class="card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis aliquam asperiores omnis officiis.
+                </p>
+                <span class="u-w-full c-link u-text-p6 u-text-center"
+                  >More details ></span
+                >
+              </div>
+            </div>
 
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\android-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >ANDROID</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="card swiper-slide">
+              <div class="card_image">
+                <img src="assets\images\wordpress-icon.png" alt="" />
+              </div>
+              <div class="card_content">
+                <span class="card_title">Wordpress</span>
+                <p class="card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis aliquam asperiores omnis officiis.
+                </p>
+                <span class="u-w-full c-link u-text-p6 u-text-center"
+                  >More details ></span
+                >
+              </div>
+            </div>
 
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\apple-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >IOS</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\react-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >REACT JS</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\angular-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >ANGULAR</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="tile">
-                        <div
-                          class="swiper-slide u-bg-white u-shadow-xl u-rounded"
-                        >
-                          <div
-                            class="tile__details"
-                            style="background-color: #303037"
-                          >
-                            <img
-                              class="tile__img"
-                              src="assets\images\vuejs-icon.png"
-                              alt=""
-                            />
-                            <div class="tile__title">
-                              <!-- University<br />Template<br /> -->
-                              <span
-                                class="u-w-full c-link u-text-p6-bold u-text-center"
-                                >VUEJS</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="card swiper-slide">
+              <div class="card_image">
+                <img src="assets\images\react-icon.png" alt="" />
+              </div>
+              <div class="card_content">
+                <span class="card_title">React</span>
+                <p class="card_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis aliquam asperiores omnis officiis.
+                </p>
+                <span class="u-w-full c-link u-text-p6 u-text-center"
+                  >More details ></span
+                >
               </div>
             </div>
           </div>
