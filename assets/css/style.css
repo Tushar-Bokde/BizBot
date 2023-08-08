@@ -706,6 +706,9 @@ body {
   letter-spacing: -0.02em;
   line-height: 1.35;
 }
+.u-text-p5 .u-text-p5-bold {
+  font-size: 2rem;
+}
 @media screen and (min-width: 36rem) {
   .u-text-p5 {
     font-size: calc(1.11721rem + 0.49038vw);
@@ -744,12 +747,12 @@ body {
   margin-top: 10px;
 }
 .t-home-testimonial-block {
-  width: 100%;
+  width: 500px;
   background: #f6f6f7;
 }
 @media screen and (max-width: 768px) {
   .t-home-testimonial-block {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -824,7 +827,9 @@ img {
 }
 
 /*-----------------------------------*\
-  #BLOG
+<!----Watch your business grow with BizBot---->
+<!----Watch your business grow with BizBot---->
+<!----Watch your business grow with BizBot---->
 \*-----------------------------------*/
 .u-Pt-xl {
   padding-top: 6rem;
@@ -974,6 +979,11 @@ svg:not(:root) {
 @media screen and (min-width: 36rem) {
   .u-text-p2 {
     font-size: calc(0.63118rem + 3.71236vw);
+  }
+}
+@media screen and (max-width: 768px) {
+  .o-columns .u-text-p2 {
+    font-size: 3.5rem;
   }
 }
 .u-text-p2 {
@@ -1292,14 +1302,14 @@ button {
   color: #fff !important;
 }
 .u-text-p1 {
-  font-size: 2.26277684rem;
+  font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 1.05;
 }
 @media screen and (min-width: 36rem) {
   .u-text-p1 {
-    font-size: calc(0.1899rem + 5.758vw);
+    font-size: 2rem;
   }
 }
 
@@ -1313,7 +1323,7 @@ button {
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.35;
-  margin-top: 25px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 36rem) {
   .u-text-p5 {
@@ -1365,32 +1375,24 @@ button {
 }
 @media screen and (max-width: 768px) {
   .t-home-chatbot-team-feature {
-    max-width: 90%;
+    max-width: 100%;
   }
-
-  .u-text-p1 {
-    font-size: 2.26277684rem;
-    font-weight: 500;
-    letter-spacing: -0.03em;
-    line-height: 1.05;
-    text-align: center;
-    padding-right: 32px;
-  }
-
   .o-container .u-text-p5 {
-    font-size: 1.29375rem;
+    max-width: 100%;
+    font-size: 1.5rem;
     text-align: center;
-    padding-right: 35px;
-    margin-left: 31px;
+    /* padding-right: 35px;
+    margin-left: 31px; */
   }
-
   .o-container .u-maxw-9 .u-text-p1 {
+    text-align: center;
     font-size: 2.26277684rem;
     font-weight: 500;
     letter-spacing: -0.03em;
     line-height: 1.05;
   }
 }
+
 .b--u-mt-12 {
   margin-top: 6rem !important;
 }
@@ -2618,7 +2620,7 @@ abbr[title] {
 }
 .u-maxw-13 .c-tour .u-Pt-md {
   padding-top: 1rem;
-  width: 414px;
+  max-width: 100%;
   margin-top: 0px;
 }
 .c-tour__features.v--dark .c-tour__feature {
@@ -2630,11 +2632,14 @@ abbr[title] {
   flex: none;
   padding: 1.5rem;
   scroll-snap-align: center;
-  width: calc(90% - 1.5rem);
+  width: 88%;
 }
 @media (max-width: 64rem) {
   .c-tour__feature {
     margin-right: 1rem;
+  }
+  .u-text-p5 .u-text-p5-bold {
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 48rem) {
@@ -2788,7 +2793,7 @@ abbr[title] {
 }
 .c-tour__features:not(.v--reset):after {
   content: "";
-  flex: 0 0 4vw;
+  flex: 0 0 0;
   margin: 0;
   padding: 0;
 }
@@ -2828,7 +2833,16 @@ abbr[title] {
     margin-left: 10px;
     text-align: center;
   }
+
+  .u-maxw-13 .u-maxw-9 .u-text-p1 {
+    font-size: 3.5rem;
+  }
+  .utext {
+    text-align: center;
+    line-height: 4.5rem;
+  }
 }
+
 .u-bg-gray-900 .u-Pt-xl {
   padding-top: 3rem;
 }
@@ -3195,8 +3209,11 @@ video {
   margin-right: auto;
   width: 100%;
 }
-/* styles.css */
+
 @media screen and (max-width: 768px) {
+  .o-container-xl {
+    padding-top: 30px;
+  }
   .u-flex-wrap {
     flex-wrap: wrap;
   }
@@ -3315,7 +3332,7 @@ video {
   }
 
   .b--u-text-4xl {
-    font-size: 2.25rem;
+    font-size: 4rem;
   }
 
   .u-text-p7 {
@@ -3369,40 +3386,14 @@ video {
   .u-ml-0 {
     margin-left: 0;
   }
+  .c-tour .c-tour__gallery {
+    margin-top: 40px;
+  }
 }
 
 /* <!---------- Seamless Integration ---------->
 <!---------- Seamless Integration ---------->
 <!---------- Seamless Integration ----------> */
-
-/* .o-contain-xl {
-  max-width: 84.5rem;
-}
-.t-home-integration-block {
-  background: #303037;
-  transition: all 0.2s;
-}
-.t-home-integration-block .t-home-integration-icon {
-  max-width: 64px;
-}
-.t-home-integration-block:hover {
-  transform: scale(1.05);
-}
-.t-home-integration-block:hover span {
-  text-decoration: underline;
-}
-.t-home-integration-block.v--old {
-  background: #0f223e;
-}
-a.v--no-underline:hover {
-  text-decoration: none;
-}
-.u-Px-xs {
-  padding-right: 1.5rem;
-}
-.u-content-start {
-  align-content: flex-start;
-} */
 
 .swiper {
   width: 100%;
