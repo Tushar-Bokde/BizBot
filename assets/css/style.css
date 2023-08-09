@@ -626,20 +626,20 @@ body {
   left: 0;
   max-width: 297px;
   position: absolute;
-  top: 0;
+  top: 3700px;
 }
 .u-hidden {
   display: none;
 }
 
 .t-svg-fix .t-home-dust-right-2 {
-  top: 0;
+  top: 3700px;
   max-width: 301px;
   position: absolute;
   right: 0;
 }
 .t-svg-fix img {
-  display: block;
+  display: ;
   height: auto;
   /* margin-left: auto;
   margin-right: auto; */
@@ -670,18 +670,13 @@ body {
 .o-columns .t-home-testimonial-block {
   background: #f6f6f7;
 }
-.t-home-testimonial-block .t-home-testimonial-img {
-  height: 125px;
-  left: 3rem;
-  position: absolute;
-  top: -60px;
-  width: 110px;
-}
+
 @media (min-width: 768px) {
   .md\:u-block {
     display: block;
   }
 }
+
 .u-relative {
   position: relative;
 }
@@ -721,7 +716,7 @@ body {
   }
 }
 .u-text-p5-bold {
-  font-size: 1.29375rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -768,7 +763,7 @@ img {
   left: 3rem;
   position: absolute;
   top: -60px;
-  width: 110px;
+  width: 124px;
 }
 .u-Pt-md {
   padding-top: 3rem;
@@ -847,7 +842,7 @@ img {
   padding-top: 6rem;
 }
 .u-Pb-md {
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 .sm\:u-Pb-md {
   padding-bottom: 3rem;
@@ -3163,7 +3158,7 @@ body:-webkit-scrollbar {
 }
 .b--u-text-xs {
   font-size: var(--font-size-xs);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.28571429;
 }
 .u-text-gray-200 {
@@ -3181,7 +3176,7 @@ body:-webkit-scrollbar {
   line-height: 1.333;
 }
 .b--u-text-bold {
-  font-weight: 500;
+  font-weight: 700;
 }
 .u-maxw-4 {
   max-width: 22rem;
@@ -3253,6 +3248,10 @@ video {
 
   .u-relative {
     position: relative;
+  }
+  .u-class {
+    position: relative;
+    display: flex;
   }
 
   .o-feature__zoom {
@@ -3389,6 +3388,14 @@ video {
   .c-tour .c-tour__gallery {
     margin-top: 40px;
   }
+
+  .o-columns .u-maxw-6 {
+    max-width: 90%;
+    padding-bottom: 10px;
+  }
+  .u-pad {
+    padding-bottom: 0;
+  }
 }
 
 /* <!---------- Seamless Integration ---------->
@@ -3443,6 +3450,7 @@ video {
   margin-top: 1.5em;
   font-size: 1em;
   line-height: 1.5em;
+  color: whitesmoke;
 }
 .card_content:hover .u-text-p6 {
   color: aqua;
